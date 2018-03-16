@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSON tuto</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var persona = {
+			"nombre":"jesus",
+			"apellido":"crisostomo",
+			"edad":22,
+			"nickname":"wololo",
+			"saludo": function(){
+				return "Hola mundo"
+			}
+		};
+		console.log(persona["nombre"]);
+
+		var personas = [
+			{"nombre":"Aldo", "nickname":"wololo"},
+			{"nombre":"Leopoldo", "nickname":"polo"},
+		]
+		console.log(personas[1].nombre);
+
+		for (var i = 0; i < personas.length; i++) {
+			console.log(personas[i]);
+		}
+	</script>
+</body>
+</html>
